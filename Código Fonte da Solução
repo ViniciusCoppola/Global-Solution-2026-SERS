@@ -46,13 +46,7 @@ void loop() {
   Temperatura = (Temp - 0.5) * 100;
   valorLuz = analogRead(LDR);
   
-  //Faz os servos de demonstração se movimentarem
-    servo1.write(0);
-    servo2.write(0);
-   	delay(1000);
-   	servo1.write(180);
-    servo2.write(180);
-   	delay(1000);
+ 
   
   // --- VERIFICAÇÃO DOS ALERTAS ---
   // Usamos IFs separados para que uma emergência não anule a outra
@@ -117,12 +111,12 @@ void loop() {
     delay(500); 
     
     //Faz os servos de demonstração se movimentarem
-    //servo1.write(0);
-    //servo2.write(0);
-   	//delay(1000);
-   	//servo1.write(180);
-    //servo2.write(180);
-   	//delay(1000);
+    servo1.write(0);
+    servo2.write(0);
+   	delay(1000);
+   	servo1.write(180);
+    servo2.write(180);
+   	delay(1000);
 
    
     
